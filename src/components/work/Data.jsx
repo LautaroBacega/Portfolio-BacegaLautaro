@@ -10,7 +10,7 @@ export const projectsData = [
         image: Work1,
         title: 'Proyecto Final Desarrollo Frontend',
         category: 'Frontend',
-        link: 'https://relojesbacega.netlify.app/#',
+        link: 'https://melatiniturism0.netlify.app/',
     },
     {
         id: 2,
