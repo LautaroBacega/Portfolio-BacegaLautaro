@@ -10,7 +10,7 @@ export const projectsData = [
         image: Work1,
         title: 'Proyecto Final Desarrollo Frontend',
         category: 'Frontend',
-        link: 'https://melatiniturism0.netlify.app/',
+        link: 'https://melatiniturismo.netlify.app/',
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ export const projectsData = [
 // Poner nombre de la varaiable 'name' de acuerdo a lo colocado en la variable anterior 'category'
 export const projectsNav = [
     {
-        name: 'All',
+        name: 'Todos',
     },
     {
         name: 'Frontend',

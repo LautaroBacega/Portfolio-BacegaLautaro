@@ -4,12 +4,12 @@ import WorkItems from './WorkItems'
 
 const Works = () => {
 
-    const [item, setItem] = useState ({name: 'all'})
+    const [item, setItem] = useState ({name: 'todos'})
     const [projects, setProjects] = useState([])
     const [active, setActive] = useState(0)
 
     useEffect(() => {
-        if(item.name === 'all') {
+        if(item.name === 'todos') {
             setProjects(projectsData)
         }
         else {

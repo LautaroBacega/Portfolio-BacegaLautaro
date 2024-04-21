@@ -19,8 +19,8 @@ const Qualification = () => {
                 <div 
                     className={
                         toggleState === 1 
-                        ? "qualification__button qualification__active button--flex" 
-                        : "qualification__button button--flex" 
+                        ? "qualification__button qualification__active button--flex active-work work__item" 
+                        : "qualification__button button--flex work__item" 
                     }
                     onClick={() => toggleTab(1)}
                 >
@@ -30,8 +30,8 @@ const Qualification = () => {
                 <div 
                     className={
                         toggleState === 2 
-                        ? "qualification__button qualification__active button--flex" 
-                        : "qualification__button button--flex" 
+                        ? "qualification__button qualification__active button--flex active-work work__item" 
+                        : "qualification__button button--flex work__item" 
                     }
                     onClick={() => toggleTab(2)}
                 >

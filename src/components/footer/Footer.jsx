@@ -24,8 +24,12 @@ const Footer = () => {
             </ul>
 
             <div className="footer__social">
-                <a href="https://www.instagram.com/lauchabacegabmx/?hl=es-la" className="footer__social-link" target='_blank'>
-                    <i className="bx bxl-instagram"></i>
+                <a href="https://wa.link/1jfq6d" className="footer__social-link" target='_blank'>
+                    <i className="uil uil-whatsapp"></i>
+                </a>
+
+                <a href="mailto:lautibacega@gmail.com" className="footer__social-link" target='_blank'>
+                    <i className="uil uil-envelope-alt"></i>
                 </a>
 
                 <a href="https://github.com/LautaroBacega" className="footer__social-link" target='_blank'>
