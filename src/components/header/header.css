@@ -68,18 +68,16 @@
 /* BREAKPOINTS */
 @media screen and (max-width: 1200px) {
     .header {
-      padding: 0 200px; /* Agrega relleno a los lados del encabezado */
+      padding: 0 100px; /* Agrega relleno a los lados del encabezado */
     }
-  }
-  
-  /* Para dispositivos con un ancho de pantalla igual o menor a 992px (medios dispositivos) */
-  @media screen and (max-width: 992px) {
+}
+
+/* Para dispositivos con un ancho de pantalla igual o menor a 992px (medios dispositivos) */
+@media screen and (max-width: 992px) {
     .header {
       padding: 0 3rem; /* Reduce aún más el relleno a los lados del encabezado */
     }
-  }
-  
-  
+}
 
 /* For medium devices */
 @media screen and (max-width: 768px) { 

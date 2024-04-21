@@ -63,3 +63,18 @@
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .footer__link {
+        display: flex;
+        text-align: center;
+    }
+}
+
+  /* For small devices */ 
+  @media screen and (max-width: 350px) {
+    .footer__link {
+        display: flex;
+        text-align: center;
+    }
+  }
