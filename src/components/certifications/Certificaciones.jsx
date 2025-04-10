@@ -14,69 +14,76 @@ import FrontendJavascript from "../../assets/CoderHouse - JavaScript.png"
 import FrontendReactJs from "../../assets/CoderHouse - React Js.png"
 
 const Certificaciones = () => {
-  const [toggleState, setToggleState] = useState(0)
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
-  // Datos de los certificados (reemplaza con tus propios certificados)
+  // Datos de los certificados
   const certificates = [
     {
       id: 1,
-      title: "Analitico 1 de 2",
+      title: "Analítico 1 de 2",
       image: Analitico1,
+      issuer: "Institución Educativa",
     },
     {
       id: 2,
-      title: "Analitico 2 de 2",
+      title: "Analítico 2 de 2",
       image: Analitico2,
+      issuer: "Institución Educativa",
     },
     {
       id: 3,
-      title: "Titulo en Tramite",
+      title: "Título en Trámite",
       image: TituloEnTramite,
+      issuer: "Institución Educativa",
     },
     {
       id: 4,
-      title: "Programacion Backend 1: Desarrollo Avanzado de Backend",
+      title: "Programación Backend 1: Desarrollo Avanzado de Backend",
       image: Backend1,
+      issuer: "CoderHouse",
     },
     {
       id: 5,
-      title: "Programacion Backend 2: Diseño y Arquitectura Backend",
+      title: "Programación Backend 2: Diseño y Arquitectura Backend",
       image: Backend2,
+      issuer: "CoderHouse",
     },
     {
       id: 6,
-      title: "Programacion Backend 3: Testing y Escalabilidad Backend",
+      title: "Programación Backend 3: Testing y Escalabilidad Backend",
       image: Backend3,
+      issuer: "CoderHouse",
     },
-    ,
     {
       id: 7,
       title: "Carrera de Desarrollo Frontend React",
       image: FrontendCarrera,
+      issuer: "CoderHouse",
     },
-    ,
     {
       id: 8,
-      title: "Programacion Backend 1: Desarrollo Web",
+      title: "Desarrollo Web",
       image: FrontendDesarrolloWeb,
+      issuer: "CoderHouse",
     },
-    ,
     {
       id: 9,
-      title: "Programacion Backend 2: Javascript",
+      title: "JavaScript",
       image: FrontendJavascript,
+      issuer: "CoderHouse",
     },
-    ,
     {
       id: 10,
-      title: "Programacion Backend 3: React Js",
+      title: "React Js",
       image: FrontendReactJs,
+      issuer: "CoderHouse",
     },
   ]
 
   // Efecto para controlar el scroll del body cuando el modal está abierto
   useEffect(() => {
-    if (toggleState !== 0) {
+    if (isModalOpen) {
       // Cuando el modal está abierto, evita el scroll del body
       document.body.style.overflow = "hidden"
     } else {
@@ -88,48 +95,101 @@ const Certificaciones = () => {
     return () => {
       document.body.style.overflow = "auto"
     }
-  }, [toggleState])
+  }, [isModalOpen])
 
   const openModal = (index) => {
-    setToggleState(index)
+    setActiveIndex(index)
+    setIsModalOpen(true)
   }
 
   const closeModal = () => {
-    setToggleState(0)
+    setIsModalOpen(false)
   }
+
+  const navigatePrev = (e) => {
+    e.stopPropagation()
+    setActiveIndex((prev) => (prev === 0 ? certificates.length - 1 : prev - 1))
+  }
+
+  const navigateNext = (e) => {
+    e.stopPropagation()
+    setActiveIndex((prev) => (prev === certificates.length - 1 ? 0 : prev + 1))
+  }
+
+  // Manejar teclas de navegación
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!isModalOpen) return
+
+      if (e.key === "Escape") {
+        closeModal()
+      } else if (e.key === "ArrowLeft") {
+        setActiveIndex((prev) => (prev === 0 ? certificates.length - 1 : prev - 1))
+      } else if (e.key === "ArrowRight") {
+        setActiveIndex((prev) => (prev === certificates.length - 1 ? 0 : prev + 1))
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [isModalOpen, certificates.length])
 
   return (
     <section className="contact container section" id="certificados">
       <h2 className="section__title">Certificados</h2>
-      <span className="section__subtitle">Mis certificados</span>
+      <span className="section__subtitle">Mis certificaciones profesionales</span>
 
       <div className="certificates__container">
-        {certificates.map((certificate) => (
-          <div className="certificate__item" key={certificate.id} onClick={() => openModal(certificate.id)}>
-            <img src={certificate.image || "/placeholder.svg"} alt={certificate.title} className="certificate__img" />
+        {certificates.map((certificate, index) => (
+          <div className="certificate__card" key={certificate.id}>
+            <div className="certificate__img-container" onClick={() => openModal(index)}>
+              <img src={certificate.image || "/placeholder.svg"} alt={certificate.title} className="certificate__img" />
+              <div className="certificate__overlay">
+                <span className="certificate__view">Ver certificado</span>
+              </div>
+            </div>
+            <div className="certificate__info">
+              <h3 className="certificate__title">{certificate.title}</h3>
+            </div>
           </div>
         ))}
       </div>
 
-      {/* Modal para cada certificado */}
-      {certificates.map((certificate) => (
-        <div
-          className={toggleState === certificate.id ? "certificate__modal active-modal" : "certificate__modal"}
-          key={`modal-${certificate.id}`}
-        >
-          <div className="certificate__modal-content">
-            <i onClick={closeModal} className="uil uil-times certificate__modal-close"></i>
-            <h3 className="certificate__modal-title">{certificate.title}</h3>
+      {/* Modal para visualizar certificados */}
+      <div className={isModalOpen ? "certificate__modal active-modal" : "certificate__modal"} onClick={closeModal}>
+        <div className="certificate__modal-content" onClick={(e) => e.stopPropagation()}>
+          <i onClick={closeModal} className="uil uil-times certificate__modal-close"></i>
+
+          <div className="certificate__modal-header">
+            <h3 className="certificate__modal-title">{certificates[activeIndex]?.title}</h3>
+            <p className="certificate__modal-subtitle">{certificates[activeIndex]?.issuer}</p>
+          </div>
+
+          <div className="certificate__modal-img-container">
             <img
-              src={certificate.image || "/placeholder.svg"}
-              alt={certificate.title}
+              src={certificates[activeIndex]?.image || "/placeholder.svg"}
+              alt={certificates[activeIndex]?.title}
               className="certificate__modal-img"
             />
           </div>
+
+          <div className="certificate__navigation">
+            <div className="certificate__nav-btn" onClick={navigatePrev}>
+              <i className="uil uil-angle-left"></i>
+            </div>
+            <div className="certificate__nav-btn" onClick={navigateNext}>
+              <i className="uil uil-angle-right"></i>
+            </div>
+          </div>
+
+          <div className="certificate__counter">
+            {activeIndex + 1} / {certificates.length}
+          </div>
         </div>
-      ))}
+      </div>
     </section>
   )
 }
 
 export default Certificaciones
+

@@ -19,7 +19,7 @@ const Skills = () => {
         <div className="skills__row">
           <DevTools />
           <Methodologies />
-          <SoftSkills />
+          {/* <SoftSkills /> */}
         </div>
       </div>
     </section>
