@@ -60,7 +60,7 @@ const Header = () => {
                     : 'nav__link'
                   }
                 >
-                  <i className="uil uil-file-alt nav__icon"></i> Habilidades
+                  <i className="uil uil-processor nav__icon"></i> Habilidades
                 </a>
               </li>
 
@@ -112,7 +112,7 @@ const Header = () => {
                     : 'nav__link'
                   }
                 >
-                  <i className="uil uil-message nav__icon"></i> Certificados
+                  <i className="uil uil-file-check-alt nav__icon"></i> Certificados
                 </a>
               </li>
 

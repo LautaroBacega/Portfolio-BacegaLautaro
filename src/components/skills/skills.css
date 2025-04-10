@@ -108,7 +108,6 @@
     }
   
     .skills__group {
-      grid-template-columns: 1fr;
       max-width: 100%;
     }
   }

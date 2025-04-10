@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import "./certificaciones.css"
 import Analitico1 from "../../assets/Bacega Lautaro_Analítico 1.jpg"
 import Analitico2 from "../../assets/Bacega Lautaro_Analítico 2.jpg"
-import TituloEnTramite from "../../assets/Bacega Lautaro_Analítico 1.jpg"
+import TituloEnTramite from "../../assets/Bacega Lautaro_Título en trámite.jpg"
 import Backend1 from "../../assets/CoderHouse - Backend 1.png"
 import Backend2 from "../../assets/CoderHouse - Backend 2.png"
 import Backend3 from "../../assets/CoderHouse - Backend 3.png"
@@ -21,21 +21,21 @@ const Certificaciones = () => {
   const certificates = [
     {
       id: 1,
-      title: "Analítico 1 de 2",
-      image: Analitico1,
-      issuer: "Institución Educativa",
+      title: "Título en Trámite",
+      image: TituloEnTramite,
+      issuer: "Juan XVIII",
     },
     {
       id: 2,
-      title: "Analítico 2 de 2",
-      image: Analitico2,
-      issuer: "Institución Educativa",
+      title: "Analítico 1 de 2",
+      image: Analitico1,
+      issuer: "Juan XVIII",
     },
     {
       id: 3,
-      title: "Título en Trámite",
-      image: TituloEnTramite,
-      issuer: "Institución Educativa",
+      title: "Analítico 2 de 2",
+      image: Analitico2,
+      issuer: "Juan XVIII",
     },
     {
       id: 4,
