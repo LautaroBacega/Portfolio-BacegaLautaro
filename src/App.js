@@ -11,6 +11,7 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/ScrollUp/ScrollUp';
 import Work from './components/work/Work';
+import Certificaciones from './components/certifications/Certificaciones';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Services/>
         <Qualification/>
         <Work/>
+        <Certificaciones/>
         {/* <Testimonials/> */}
         <Contact/>
       </main>

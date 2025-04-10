@@ -1,17 +1,16 @@
 import "./skills.css"
 
-const Frontend = () => {
+const DevTools = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Desarrollo Frontend</h3>
+      <h3 className="skills__title">Herramientas de Desarrollo</h3>
 
       <div className="skills__box">
         <div className="skills__group">
-
-        <div className="skills__data">
+          <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">React Js</h3>
+              <h3 className="skills__name">Git</h3>
               <span className="skills__level">Avanzado</span>
             </div>
           </div>
@@ -19,7 +18,7 @@ const Frontend = () => {
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">JavaScript</h3>
+              <h3 className="skills__name">GitHub/GitLab</h3>
               <span className="skills__level">Avanzado</span>
             </div>
           </div>
@@ -27,31 +26,38 @@ const Frontend = () => {
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">Tailwind</h3>
-              <span className="skills__level">Avanzado</span>
+              <h3 className="skills__name">RESTful API</h3>
+              <span className="skills__level">Básico</span>
             </div>
           </div>
 
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">HTML</h3>
-              <span className="skills__level">Avanzado</span>
+              <h3 className="skills__name">Docker</h3>
+              <span className="skills__level">Básico</span>
             </div>
           </div>
 
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">CSS</h3>
-              <span className="skills__level">Avanzado</span>
+              <h3 className="skills__name">CI/CD</h3>
+              <span className="skills__level">Básico</span>
             </div>
           </div>
 
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills__name">Figma</h3>
+              <span className="skills__level">Básico</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-export default Frontend
+export default DevTools

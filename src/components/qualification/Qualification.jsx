@@ -54,7 +54,7 @@ const Qualification = () => {
                             <h3 className="qualification__title">Tecnico Superior en Analisis de Sistemas</h3>
                             <span className="qualification__subtitle">Instituto Superior Juan23</span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2019 - Actualidad
+                                <i className="uil uil-calendar-alt"></i> 2019 - 2025
                             </div>
                         </div>
 
@@ -90,7 +90,7 @@ const Qualification = () => {
                             <h3 className="qualification__title">Desarrollo Backend</h3>
                             <span className="qualification__subtitle">CoderHouse</span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2024 - Actualidad
+                                <i className="uil uil-calendar-alt"></i> 2024
                             </div>
                         </div>
 
@@ -145,7 +145,50 @@ const Qualification = () => {
                             </div>
                         </div>
 
+                        
+
                     </div>
+
+                    <div className="qualification__data">
+
+                        <div>
+                            <h3 className="qualification__title">Proyecto Final Desarrollo Backend</h3>
+                            <span className="qualification__subtitle">CoderHouse</span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2024
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div className="qualification__data">
+
+                        <div></div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 className="qualification__title">Ecommerce: 
+                                <div></div>
+                                    Tienda Bmx
+                            </h3>
+                            <span className="qualification__subtitle">Freelancer</span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2024 - actualidad
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
                 </div>
             </div>
 

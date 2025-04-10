@@ -1,23 +1,21 @@
-import Work1 from '../../assets/work1.jpg';
-import Work2 from '../../assets/work2.jpg';
-import Work3 from '../../assets/work3.jpg';
-import Work4 from '../../assets/work4.jpg';
-import Work5 from '../../assets/work5.jpg';
+import EcommerceIMG from '../../assets/EcommerceIMG.jpeg';
+import CoderBackendIMG from '../../assets/CoderBackendImg.jpeg';
+
 
 export const projectsData = [
     {
         id: 1,
-        image: Work1,
+        image: EcommerceIMG,
         title: 'Proyecto Final Desarrollo Frontend',
         category: 'Frontend',
-        link: 'https://melatiniturismo.netlify.app/',
+        link: 'https://accesoriosbmx2.netlify.app/',
     },
     {
         id: 2,
-        image: Work2,
-        title: 'Bolsa de Trabajo Instituto Juan23',
-        category: 'Fullstack',
-        link: '',
+        image: CoderBackendIMG,
+        title: 'Proyecto Final Desarrollo Backend',
+        category: 'Backend',
+        link: 'https://github.com/LautaroBacega/Entrega-Final---Bacega-Lautaro---Backend-3.git',
     }
 ]
 
@@ -31,8 +29,8 @@ export const projectsNav = [
     },
     {
         name: 'Backend',
-    },
+    }/* ,
     {
         name: 'Fullstack',
-    },
+    }, */
 ]
