@@ -23,19 +23,19 @@ const Certificaciones = () => {
       id: 1,
       title: "Título en Trámite",
       image: TituloEnTramite,
-      issuer: "Juan XVIII",
+      issuer: "Juan XXIII",
     },
     {
       id: 2,
       title: "Analítico 1 de 2",
       image: Analitico1,
-      issuer: "Juan XVIII",
+      issuer: "Juan XXIII",
     },
     {
       id: 3,
       title: "Analítico 2 de 2",
       image: Analitico2,
-      issuer: "Juan XVIII",
+      issuer: "Juan XXIII",
     },
     {
       id: 4,
