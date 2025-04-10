@@ -54,8 +54,8 @@ function Data() {
                   ></path>
             </svg>
         </h1>
-        <h3 className="home__subtitle">Desarrollador Frontend</h3>
-        <p className="home__description">¡Hola! Soy un futuro Técnico Superior en Análisis de Sistemas, residiendo en Bahía Blanca, Buenos Aires. Mi pasión por la programación y el desarrollo me impulsa a buscar constantemente nuevos desafíos. Aunque mi trayectoria profesional aún está en crecimiento, estoy emocionado por aplicar mis habilidades y conocimientos en proyectos innovadores. ¡Espero poder contribuir con mi experiencia y entusiasmo a tu próximo proyecto!</p>
+        <h3 className="home__subtitle">Tecnico Superior en Analisis de Sistemas</h3>
+        <p className="home__description">¡Hola! Soy Técnico Superior en Análisis de Sistemas, recientemente graduado y radicado en Bahía Blanca, Buenos Aires. Mi pasión por la programación y el desarrollo me impulsa a asumir nuevos desafíos cada día. Aunque mi trayectoria profesional sigue en crecimiento, estoy entusiasmado por aplicar mis habilidades y conocimientos en proyectos innovadores. ¡Espero poder aportar mi experiencia, dedicación y energía a tu próximo proyecto!</p>
         <a href="#contact" className="button button--flex">Saludar
             <svg
                   class="button__icon"

@@ -16,7 +16,8 @@ const About = () => {
             <div className="about__data">
                 <Info/>
 
-                <p className="about__description">Soy un Desarrollador Frontend con un enfoque en la creación de páginas web utilizando tecnologías como React.js, HTML y CSS. Aunque estoy en las primeras etapas de mi carrera, estoy comprometido a aprender y mejorar continuamente mis habilidades. Mi objetivo es proporcionar soluciones digitales de calidad que cumplan con las expectativas de mis clientes y contribuir de manera significativa al éxito de sus proyectos.</p>
+                <p className="about__description">Durante mis prácticas profesionales, diseñé y desarrollé una plataforma de bolsa de trabajo que facilitó la conexión entre profesionales y oportunidades laborales. Además, como freelancer, estoy finalizando mi primer e-commerce, integrando tecnologías tanto de frontend como de backend para ofrecer una experiencia de usuario óptima.
+                Estoy comprometido con la mejora continua, la implementación de soluciones tecnológicas de alta calidad y la adopción de las últimas tendencias para impulsar el éxito de cada proyecto. Mi enfoque combina el análisis detallado de sistemas con la capacidad para transformar ideas en productos digitales funcionales y escalables..</p>
 
                 <a download='' href={CV} className="button button--flex">Descargar CV
                     <svg

@@ -29,7 +29,7 @@ const Frontend = () => {
                     <i className="bx bx-badge-check"></i>
                     <div>
                         <h3 className="skills__name">JavaScript</h3>
-                        <span className="skills__level">Intermedio</span>
+                        <span className="skills__level">Avanzado</span>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ const Frontend = () => {
                     <i className="bx bx-badge-check"></i>
                     <div>
                         <h3 className="skills__name">React Js</h3>
-                        <span className="skills__level">Intermedio</span>
+                        <span className="skills__level">Avanzado</span>
                     </div>
                 </div>
 
@@ -45,8 +45,8 @@ const Frontend = () => {
                     <i className="bx bx-badge-check"></i>
 
                     <div>
-                        <h3 className="skills__name">Bootstrap</h3>
-                        <span className="skills__level">Intermedio</span>
+                        <h3 className="skills__name">Tailwind</h3>
+                        <span className="skills__level">Avanzado</span>
                     </div>
                 </div>
 
@@ -55,7 +55,7 @@ const Frontend = () => {
 
                     <div>
                         <h3 className="skills__name">Git</h3>
-                        <span className="skills__level">Intermedio</span>
+                        <span className="skills__level">Avanzado</span>
                     </div>
                 </div>
 
