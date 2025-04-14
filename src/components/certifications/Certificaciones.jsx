@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react"
 import "./certificaciones.css"
-import Analitico1 from "../../assets/Bacega Lautaro_Analítico 1.jpg"
-import Analitico2 from "../../assets/Bacega Lautaro_Analítico 2.jpg"
-import TituloEnTramite from "../../assets/Bacega Lautaro_Título en trámite.jpg"
+import Analitico1 from "../../assets/Lautaro Bacega - Analítico 1.jpg"
+import Analitico2 from "../../assets/Lautaro Bacega - Analítico 2.jpg"
+import TituloEnTramite from "../../assets/Lautaro Bacega - Título en trámite.jpg"
 import Backend1 from "../../assets/CoderHouse - Backend 1.png"
 import Backend2 from "../../assets/CoderHouse - Backend 2.png"
 import Backend3 from "../../assets/CoderHouse - Backend 3.png"
