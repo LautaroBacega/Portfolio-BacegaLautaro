@@ -5,6 +5,8 @@ import "./certificaciones.css"
 import Analitico1 from "../../assets/Lautaro Bacega - Analítico 1.jpg"
 import Analitico2 from "../../assets/Lautaro Bacega - Analítico 2.jpg"
 import TituloEnTramite from "../../assets/Lautaro Bacega - Título en trámite.jpg"
+import TituloDigital1 from "../../assets/Bacega Lautaro - Titulo_page-0001.jpg"
+import TituloDigital2 from "../../assets/Bacega Lautaro - Titulo_page-0002.jpg"
 import Backend1 from "../../assets/CoderHouse - Backend 1.png"
 import Backend2 from "../../assets/CoderHouse - Backend 2.png"
 import Backend3 from "../../assets/CoderHouse - Backend 3.png"
@@ -19,62 +21,74 @@ const Certificaciones = () => {
 
   // Datos de los certificados
   const certificates = [
-    {
-      id: 1,
+    /* {
+      id: ,
       title: "Título en Trámite",
       image: TituloEnTramite,
       issuer: "Juan XXIII",
     },
     {
-      id: 2,
+      id: ,
       title: "Analítico 1 de 2",
       image: Analitico1,
       issuer: "Juan XXIII",
     },
     {
-      id: 3,
+      id: ,
       title: "Analítico 2 de 2",
       image: Analitico2,
       issuer: "Juan XXIII",
+    }, */
+    {
+      id: 1,
+      title: "Analista de Sistemas - Título Digital 1 de 2",
+      image: TituloDigital1,
+      issuer: "Juan XXIII",
     },
     {
-      id: 4,
+      id: 2,
+      title: "Analista de Sistemas - Título Digital 2 de 2",
+      image: TituloDigital2,
+      issuer: "Juan XXIII",
+    },
+    {
+      id: 3,
       title: "Programación Backend 1: Desarrollo Avanzado de Backend",
       image: Backend1,
       issuer: "CoderHouse",
     },
     {
-      id: 5,
+      id: 4,
       title: "Programación Backend 2: Diseño y Arquitectura Backend",
       image: Backend2,
       issuer: "CoderHouse",
     },
     {
-      id: 6,
+      id: 5,
       title: "Programación Backend 3: Testing y Escalabilidad Backend",
       image: Backend3,
       issuer: "CoderHouse",
     },
     {
-      id: 7,
+      id: 6,
       title: "Carrera de Desarrollo Frontend React",
       image: FrontendCarrera,
       issuer: "CoderHouse",
     },
     {
-      id: 8,
+      id: 7,
       title: "Desarrollo Web",
       image: FrontendDesarrolloWeb,
       issuer: "CoderHouse",
     },
     {
-      id: 9,
+      id: 8,
       title: "JavaScript",
       image: FrontendJavascript,
       issuer: "CoderHouse",
     },
     {
-      id: 10,
+      id: 9,
       title: "React Js",
       image: FrontendReactJs,
       issuer: "CoderHouse",

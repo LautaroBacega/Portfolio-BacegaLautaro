@@ -1,6 +1,6 @@
 import EcommerceIMG from '../../assets/EcommerceIMG.jpeg';
 import CoderBackendIMG from '../../assets/CoderBackendImg.jpeg';
-
+import abbmxFreestyleIMG from '../../assets/abbmxFreestyleIMG.png';
 
 export const projectsData = [
     {
@@ -16,10 +16,16 @@ export const projectsData = [
         title: 'Proyecto Final Desarrollo Backend',
         category: 'Backend',
         link: 'https://github.com/LautaroBacega/Entrega-Final---Bacega-Lautaro---Backend-3.git',
+    },
+    {
+        id: 3,
+        image: abbmxFreestyleIMG,
+        title: 'Escuela de BMX Freestyle',
+        category: 'Frontend',
+        link: 'https://abbmxfreestyle.netlify.app/',
     }
 ]
 
-// Poner nombre de la varaiable 'name' de acuerdo a lo colocado en la variable anterior 'category'
 export const projectsNav = [
     {
         name: 'Todos',
