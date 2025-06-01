@@ -11,7 +11,6 @@ const Methodologies = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Agile/SCRUM</h3>
-              <span className="skills__level">Intermedio</span>
             </div>
           </div>
 
@@ -19,7 +18,6 @@ const Methodologies = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Testing/Debugging</h3>
-              <span className="skills__level">Básico</span>
             </div>
           </div>
 
@@ -27,7 +25,6 @@ const Methodologies = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Jest</h3>
-              <span className="skills__level">Básico</span>
             </div>
           </div>
 
@@ -35,7 +32,6 @@ const Methodologies = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">TDD</h3>
-              <span className="skills__level">Básico</span>
             </div>
           </div>
         </div>

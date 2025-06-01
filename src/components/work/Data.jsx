@@ -1,12 +1,13 @@
 import EcommerceIMG from '../../assets/EcommerceIMG.jpeg';
 import CoderBackendIMG from '../../assets/CoderBackendImg.jpeg';
 import abbmxFreestyleIMG from '../../assets/abbmxFreestyleIMG.png';
+import autenticacionIMG from '../../assets/autenticacionIMG.png'
 
 export const projectsData = [
     {
         id: 1,
         image: EcommerceIMG,
-        title: 'Proyecto Final Desarrollo Frontend',
+        title: 'Ecommerce - Tienda Bmx',
         category: 'Frontend',
         link: 'https://accesoriosbmx2.netlify.app/',
     },
@@ -23,6 +24,13 @@ export const projectsData = [
         title: 'Escuela de BMX Freestyle',
         category: 'Frontend',
         link: 'https://abbmxfreestyle.netlify.app/',
+    },
+    {
+        id: 4,
+        image: autenticacionIMG,
+        title: 'Autenticación',
+        category: 'Fullstack',
+        link: 'https://mern-auth-gitoriginal.onrender.com/',
     }
 ]
 
@@ -35,8 +43,8 @@ export const projectsNav = [
     },
     {
         name: 'Backend',
-    }/* ,
+    },
     {
         name: 'Fullstack',
-    }, */
+    }
 ]

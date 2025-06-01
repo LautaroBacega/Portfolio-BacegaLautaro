@@ -18,16 +18,14 @@ const DevTools = () => {
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">GitHub/GitLab</h3>
-              <span className="skills__level">Avanzado</span>
+              <h3 className="skills__name">GitHub</h3>
             </div>
           </div>
 
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">RESTful API</h3>
-              <span className="skills__level">Básico</span>
+              <h3 className="skills__name">API</h3>
             </div>
           </div>
 
@@ -35,7 +33,6 @@ const DevTools = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Docker</h3>
-              <span className="skills__level">Básico</span>
             </div>
           </div>
 
@@ -43,7 +40,6 @@ const DevTools = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">CI/CD</h3>
-              <span className="skills__level">Básico</span>
             </div>
           </div>
 
@@ -51,7 +47,6 @@ const DevTools = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Figma</h3>
-              <span className="skills__level">Básico</span>
             </div>
           </div>
         </div>
