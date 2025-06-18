@@ -30,7 +30,7 @@ export const projectsData = [
         image: autenticacionIMG,
         title: 'Autenticación',
         category: 'Fullstack',
-        link: 'https://mern-auth-gitoriginal.onrender.com/',
+        link: 'https://autenticacion-o8nx.onrender.com/',
     }
 ]
 
