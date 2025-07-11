@@ -1,4 +1,4 @@
-import EcommerceIMG from '../../assets/EcommerceIMG.jpeg';
+import EcommerceIMG from '../../assets/EcommerceIMG.png';
 import CoderBackendIMG from '../../assets/CoderBackendImg.jpeg';
 import abbmxFreestyleIMG from '../../assets/abbmxFreestyleIMG.png';
 import autenticacionIMG from '../../assets/autenticacionIMG.png'
@@ -8,8 +8,8 @@ export const projectsData = [
         id: 1,
         image: EcommerceIMG,
         title: 'Ecommerce - Tienda Bmx',
-        category: 'Frontend',
-        link: 'https://accesoriosbmx2.netlify.app/',
+        category: 'Fullstack',
+        link: 'https://tienda-bmx-render.onrender.com',
     },
     {
         id: 2,
