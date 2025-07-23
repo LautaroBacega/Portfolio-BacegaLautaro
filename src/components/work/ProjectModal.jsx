@@ -1,9 +1,23 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const ProjectModal = ({ project, isOpen, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  // Bloquear scroll del body cuando el modal está abierto
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+
+    // Cleanup al desmontar el componente
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [isOpen])
 
   if (!isOpen || !project) return null
 
@@ -93,7 +107,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                 <div className="modal-section">
                   <h3 className="modal-section-title">Características</h3>
                   <ul className="modal-features">
-                    {project.features.map((feature, index) => (
+                    {project.features.slice(0, 4).map((feature, index) => (
                       <li key={index} className="modal-feature-item">
                         <span className="feature-bullet">•</span>
                         {feature}
@@ -141,25 +155,6 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                       📁 Ver Repositorio
                     </a>
                   )}
-                </div>
-              </div>
-
-              {/* Project Details */}
-              <div className="modal-details">
-                <h3 className="modal-section-title">Detalles del Proyecto</h3>
-                <div className="details-grid">
-                  <div className="detail-row">
-                    <span>ID:</span>
-                    <span>#{project.id}</span>
-                  </div>
-                  <div className="detail-row">
-                    <span>Categoría:</span>
-                    <span>{project.category}</span>
-                  </div>
-                  <div className="detail-row">
-                    <span>Tecnologías:</span>
-                    <span>{project.technologies.length}</span>
-                  </div>
                 </div>
               </div>
             </div>
