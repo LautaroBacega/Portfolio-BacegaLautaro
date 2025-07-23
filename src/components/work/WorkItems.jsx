@@ -1,14 +1,13 @@
-import React from 'react'
+"use client"
 
-const WorkItems = ({item}) => {
+const WorkItems = ({ item, onOpenModal }) => {
   return (
-    <div className="work__card" key={item.id}>
-        <img src={item.image} alt="" className='work__img'/>
-
-        <h3 className="work__title">{item.title}</h3>
-        <a href={item.link} target='_blank' className="work__button">
-            Ver <i className="bx bx-right-arrow-alt work__button-icon"></i>
-        </a>
+    <div className="work__card" key={item.id} onClick={() => onOpenModal(item)}>
+      <img src={item.image || "/placeholder.svg"} alt="" className="work__img" />
+      <h3 className="work__title">{item.title}</h3>
+      <div className="work__button" style={{ cursor: "pointer" }}>
+        Ver más <i className="bx bx-right-arrow-alt work__button-icon"></i>
+      </div>
     </div>
   )
 }
