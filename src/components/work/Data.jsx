@@ -1,71 +1,81 @@
-import EcommerceIMG from "../../assets/EcommerceIMG.png"
-import CoderBackendIMG from "../../assets/CoderBackendImg.jpeg"
-import abbmxFreestyleIMG from "../../assets/abbmxFreestyleIMG.png"
-import autenticacionIMG from "../../assets/autenticacionIMG.png"
-import CineListaIMG from "../../assets/CineLista.png"
+import tiendabmxIMG1 from "../../assets/tiendabmxIMG1.png"
+import tiendabmxIMG2 from "../../assets/tiendabmxIMG2.png"
+import tiendabmxIMG3 from "../../assets/tiendabmxIMG3.png"
+import tiendabmxIMG4 from "../../assets/tiendabmxIMG4.png"
+import tiendabmxIMG5 from "../../assets/tiendabmxIMG5.png"
+import tiendabmxIMG6 from "../../assets/tiendabmxIMG6.png"
+import tiendabmxIMG7 from "../../assets/tiendabmxIMG7.png"
+import tiendabmxIMG8 from "../../assets/tiendabmxIMG8.png"
+import tiendabmxIMG9 from "../../assets/tiendabmxIMG9.png"
+import tiendabmxIMG10 from "../../assets/tiendabmxIMG10.png"
+import cinelistaIMG1 from "../../assets/cinelistaIMG1.png"
+import cinelistaIMG2 from "../../assets/cinelistaIMG2.png"
+import cinelistaIMG3 from "../../assets/cinelistaIMG3.png"
+import cinelistaIMG4 from "../../assets/cinelistaIMG4.png"
+import cinelistaIMG5 from "../../assets/cinelistaIMG5.png"
+import cinelistaIMG6 from "../../assets/cinelistaIMG6.png"
+import autenticaionIMG1 from "../../assets/autenticacionIMG1.png"
+import autenticaionIMG2 from "../../assets/autenticacionIMG2.png"
+import autenticaionIMG3 from "../../assets/autenticacionIMG3.png"
+import autenticaionIMG4 from "../../assets/autenticacionIMG4.png"
+import autenticaionIMG5 from "../../assets/autenticacionIMG5.png"
+import autenticaionIMG6 from "../../assets/autenticacionIMG6.png"
+import abbmxIMG1 from "../../assets/abbmxIMG1.png"
+import abbmxIMG2 from "../../assets/abbmxIMG2.png"
+import abbmxIMG3 from "../../assets/abbmxIMG3.png"
+import abbmxIMG4 from "../../assets/abbmxIMG4.png"
+
 
 export const projectsData = [
   {
     id: 1,
-    image: EcommerceIMG,
-    images: [EcommerceIMG, EcommerceIMG, EcommerceIMG], // Múltiples imágenes para el carrusel
+    image: tiendabmxIMG1,
+    images: [tiendabmxIMG1, tiendabmxIMG2, tiendabmxIMG3, tiendabmxIMG4, tiendabmxIMG5, tiendabmxIMG6, tiendabmxIMG7, tiendabmxIMG8, tiendabmxIMG9, tiendabmxIMG10],
     title: "Ecommerce - Tienda Bmx",
     category: "Fullstack",
     description:
-      "Una tienda online completa para productos BMX con carrito de compras, sistema de pagos y gestión de inventario.",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+      "Una tienda online completa para productos BMX con carrito de compras, sistema de pagos, autenticacion y gestión de inventario.",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Axios"],
     link: "https://tienda-bmx-render.onrender.com",
-    repository: "https://github.com/usuario/tienda-bmx",
-    features: ["Carrito de compras", "Pagos con Stripe", "Panel de administración", "Gestión de inventario"],
+    repository: "https://github.com/LautaroBacega/Tienda-BMX-render",
+    features: ["Carrito de compras", "Autenticación", "Panel de administración", "Gestión de inventario"],
   },
   {
     id: 2,
-    image: CineListaIMG,
-    images: [CineListaIMG, CineListaIMG, CineListaIMG],
+    image: cinelistaIMG1,
+    images: [cinelistaIMG1, cinelistaIMG2, cinelistaIMG3, cinelistaIMG4, cinelistaIMG5, cinelistaIMG6],
     title: "CineLista",
     category: "Fullstack",
     description: "Aplicación para descubrir y gestionar listas de películas con integración a APIs de cine.",
-    technologies: ["React", "Node.js", "PostgreSQL", "TMDB API"],
+    technologies: ["React", "Node.js", "MongoDB", "TMDB API"],
     link: "https://movieapp-8x3t.onrender.com/",
-    repository: "https://github.com/usuario/cinelista",
-    features: ["Búsqueda de películas", "Listas personalizadas", "Reseñas", "Recomendaciones"],
+    repository: "https://github.com/LautaroBacega/CineLista",
+    features: ["Búsqueda de películas", "Listas personalizadas", "Recomendaciones"],
   },
   {
     id: 3,
-    image: autenticacionIMG,
-    images: [autenticacionIMG, autenticacionIMG, autenticacionIMG],
+    image: autenticaionIMG1,
+    images: [autenticaionIMG1, autenticaionIMG2, autenticaionIMG3, autenticaionIMG4, autenticaionIMG5, autenticaionIMG6],
     title: "Autenticación",
     category: "Fullstack",
     description: "Sistema completo de autenticación con JWT, registro, login y recuperación de contraseña.",
     technologies: ["React", "Node.js", "JWT", "bcrypt", "Nodemailer"],
     link: "https://autenticacion-o8nx.onrender.com/",
-    repository: "https://github.com/usuario/autenticacion",
+    repository: "https://github.com/LautaroBacega/MERN-Authentication-System",
     features: ["Login/Registro", "JWT Tokens", "Recuperación de contraseña", "Validaciones"],
   },
   {
     id: 4,
-    image: abbmxFreestyleIMG,
-    images: [abbmxFreestyleIMG, abbmxFreestyleIMG, abbmxFreestyleIMG],
+    image: abbmxIMG1,
+    images: [abbmxIMG1, abbmxIMG2, abbmxIMG3, abbmxIMG4],
     title: "Escuela de BMX Freestyle",
     category: "Frontend",
     description: "Sitio web para una escuela de BMX Freestyle con información de cursos y instructores.",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
     link: "https://abbmxfreestyle.netlify.app/",
-    repository: "https://github.com/usuario/bmx-freestyle",
-    features: ["Diseño responsive", "Galería de fotos", "Formulario de contacto", "Información de cursos"],
-  },
-  {
-    id: 5,
-    image: CoderBackendIMG,
-    images: [CoderBackendIMG, CoderBackendIMG, CoderBackendIMG],
-    title: "Proyecto Final Desarrollo Backend",
-    category: "Backend",
-    description: "API REST completa para un sistema de e-commerce con todas las funcionalidades backend.",
-    technologies: ["Node.js", "Express", "MongoDB", "Socket.io", "Passport"],
-    link: "https://github.com/LautaroBacega/Entrega-Final---Bacega-Lautaro---Backend-3.git",
-    repository: "https://github.com/LautaroBacega/Entrega-Final---Bacega-Lautaro---Backend-3.git",
-    features: ["API REST", "Autenticación", "WebSockets", "Base de datos", "Documentación"],
-  },
+    repository: "https://github.com/LautaroBacega/ABBMXFreestyle",
+    features: ["Diseño responsive", "Galería de fotos", "Formulario de contacto", "Información de contacto"],
+  }
 ]
 
 export const projectsNav = [
