@@ -24,6 +24,20 @@ import abbmxIMG1 from "../../assets/abbmxIMG1.png"
 import abbmxIMG2 from "../../assets/abbmxIMG2.png"
 import abbmxIMG3 from "../../assets/abbmxIMG3.png"
 import abbmxIMG4 from "../../assets/abbmxIMG4.png"
+import somosBahia1 from "../../assets/somosBahia1.png"
+import somosBahia2 from "../../assets/somosBahia2.png"
+import somosBahia3 from "../../assets/somosBahia3.png"
+import somosBahia4 from "../../assets/somosBahia4.png"
+import somosBahia5 from "../../assets/somosBahia5.png"
+import somosBahia6 from "../../assets/somosBahia6.png"
+import somosBahia7 from "../../assets/somosBahia7.png"
+import LauchaBmxStore from "../../assets/LauchaBmxStore.png"
+import LauchaBmxStore1 from "../../assets/LauchaBmxStore1.png"
+import LauchaBmxStore2 from "../../assets/LauchaBmxStore2.png"
+import LauchaBmxStore3 from "../../assets/LauchaBmxStore3.png"
+import LauchaBmxStore4 from "../../assets/LauchaBmxStore4.png"
+import LauchaBmxStore5 from "../../assets/LauchaBmxStore5.png"
+import LauchaBmxStore6 from "../../assets/LauchaBmxStore6.png"
 
 
 export const projectsData = [
@@ -75,6 +89,41 @@ export const projectsData = [
     link: "https://abbmxfreestyle.netlify.app/",
     repository: "https://github.com/LautaroBacega/ABBMXFreestyle",
     features: ["Diseño responsive", "Galería de fotos", "Formulario de contacto", "Información de contacto"],
+  },
+  {
+    id: 5,
+    image: somosBahia1,
+    images: [somosBahia1, somosBahia2, somosBahia3, somosBahia4, somosBahia5, somosBahia6, somosBahia7],
+    title: "Somos Bahía - Landing Page Política",
+    category: "Frontend",
+    description: "Landing page moderna y responsive para el movimiento político Somos Bahía, con propuestas, valores, candidatos e integración de participación ciudadana.",
+    technologies: ["React", "Vite", "Tailwind CSS", "Recharts", "Google Forms"],
+    link: "https://somosbahia.netlify.app/",
+    features: [
+      "Diseño responsive",
+      "Secciones de propuestas, valores y candidatos",
+      "Gráficos interactivos con Recharts",
+      "Integración con Google Forms",
+      "Animaciones y micro-interacciones",
+      "Optimización de imágenes"
+    ],
+  },
+  {
+    id: 5,
+    image: LauchaBmxStore,
+    images: [LauchaBmxStore1, LauchaBmxStore2, LauchaBmxStore3, LauchaBmxStore4, LauchaBmxStore5, LauchaBmxStore6],
+    title: "Laucha Bmx Store - Tienda",
+    category: "Frontend",
+    description: "Tienda online estática desarrollada para Laucha BMX Store. El sitio público muestra un catálogo de productos y carrito de compras. Localmente incluye un panel de administración para gestionar productos (CRUD).",
+    technologies: ["React", "Vite", "Tailwind CSS", "Context API", "React Router"],
+    link: "https://lauchabmxstore.netlify.app/",
+    features: [
+      "Catálogo de productos con diseño responsive",
+      "Panel de administración local para CRUD de productos",
+      "Gestión de estado con Context API",
+      "Optimización de imágenes",
+      "Animaciones y micro-interacciones"
+    ],
   }
 ]
 

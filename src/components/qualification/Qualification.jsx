@@ -189,6 +189,100 @@ const Qualification = () => {
 
                     </div>
 
+                    <div className="qualification__data">
+
+                        <div>
+                            <h3 className="qualification__title">Landing Page: Autenticación MERN</h3>
+                            <span className="qualification__subtitle">Freelancer</span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2025
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div className="qualification__data">
+
+                        <div></div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 className="qualification__title">Landing Page: 
+                                <div></div>
+                                    CineLista
+                            </h3>
+                            <span className="qualification__subtitle">Freelancer</span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2025
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div className="qualification__data">
+
+                        <div>
+                            <h3 className="qualification__title">Landing Page: Asociacion BMX Freestyle</h3>
+                            <span className="qualification__subtitle">Freelancer</span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2025
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div className="qualification__data">
+
+                        <div></div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 className="qualification__title">Landing Page: 
+                                <div></div>
+                                    Somos Bahía
+                            </h3>
+                            <span className="qualification__subtitle">Freelancer</span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2025
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="qualification__data">
+
+                        <div>
+                            <h3 className="qualification__title">Landing Page: Laucha Bmx Store</h3>
+                            <span className="qualification__subtitle">Freelancer</span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2025
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
