@@ -9,7 +9,7 @@ const Footer = () => {
                 <h1 className="footer__title">Lautaro Bacega</h1>
             </div>
 
-            <ul className="footer__list">
+            {/* <ul className="footer__list">
                 <li>
                     <a href="#about" className="footer__link">Acerca de mi</a>
                 </li>
@@ -18,10 +18,10 @@ const Footer = () => {
                     <a href="#portfolio" className="footer__link">Portafolio</a>
                 </li>
 
-                {/* <li>
+                <li>
                     <a href="#testimonials" className="footer__link">Testimonios</a>
-                </li> */}
-            </ul>
+                </li>
+            </ul> */}
 
             <div className="footer__social">
                 <a href="https://wa.link/1jfq6d" className="footer__social-link" target='_blank'>

@@ -46,7 +46,7 @@ function App() {
         <Home/>
         <Work/>
         <Skills/>
-        <About/>
+        {/* <About/> */}
         <Qualification/>
         <Certificaciones/>
         {/* <Services/> */}

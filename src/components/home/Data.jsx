@@ -1,4 +1,5 @@
 import React from 'react'
+import CV from '../../assets/Lautaro Bacega - Curriculum Vitae.pdf'
 
 function Data() {
   return (
@@ -15,7 +16,7 @@ function Data() {
       </p>
 
       <div className="home__buttons">
-        <a href="#contact" className="button button--flex">
+        <a href="#portfolio" className="button button--flex">
           Ver Proyectos
           <svg
             className="button__icon"
@@ -36,7 +37,7 @@ function Data() {
           </svg>
         </a>
 
-        <a href="#contact" className="button button--flex">
+        <a download='' href={CV} className="button button--flex">
           Descargar CV
           <svg
             className="button__icon"

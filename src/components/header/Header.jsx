@@ -39,18 +39,18 @@ const Header = () => {
               </li>
 
               <li className="nav__item">
-                <a href="#about" 
-                  onClick={() => setActiveNav ("#about")} 
+                <a href="#portfolio"
+                  onClick={() => setActiveNav ("#portfolio")} 
                   className={
                     activeNav === '#home' 
                     ? 'nav__link active-link'
                     : 'nav__link'
                   }
                 >
-                  <i className="uil uil-user nav__icon"></i> Acerca de mi
+                  <i className="uil uil-scenery nav__icon"></i> Portafolio
                 </a>
               </li>
-              
+
               <li className="nav__item">
                 <a href="#skills" 
                   onClick={() => setActiveNav ("#skills")} 
@@ -64,7 +64,20 @@ const Header = () => {
                 </a>
               </li>
 
-              <li className="nav__item">
+              {/* <li className="nav__item">
+                <a href="#about" 
+                  onClick={() => setActiveNav ("#about")} 
+                  className={
+                    activeNav === '#home' 
+                    ? 'nav__link active-link'
+                    : 'nav__link'
+                  }
+                >
+                  <i className="uil uil-user nav__icon"></i> Acerca de mi
+                </a>
+              </li> */}
+              
+              {/* <li className="nav__item">
                 <a href="#services" 
                   onClick={() => setActiveNav ("#services")} 
                   className={
@@ -75,20 +88,9 @@ const Header = () => {
                 >
                   <i className="uil uil-briefcase-alt nav__icon"></i> Servicios
                 </a>
-              </li>
+              </li> */}
 
-              <li className="nav__item">
-                <a href="#portfolio"
-                  onClick={() => setActiveNav ("#portfolio")} 
-                  className={
-                    activeNav === '#home' 
-                    ? 'nav__link active-link'
-                    : 'nav__link'
-                  }
-                >
-                  <i className="uil uil-scenery nav__icon"></i> Portafolio
-                </a>
-              </li>
+              
 
               {/* <li className="nav__item">
                 <a href="#testimonios"

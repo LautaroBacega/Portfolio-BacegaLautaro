@@ -13,7 +13,7 @@ const Contact = () => {
             'service_ppknxbw', 
             'template_xoyhuun', 
             form.current, {
-            publicKey: 'ScJPJVqD4RaiH5F2h',
+            publicKey: 'HArkHnwpu91zMKyX7N0lL',
         })
         e.target.reset() /* vaciar inputs */
     };
