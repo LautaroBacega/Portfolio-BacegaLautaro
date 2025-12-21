@@ -44,12 +44,12 @@ function App() {
       <Header/>
       <main className='main'>
         <Home/>
-        <About/>
-        <Skills/>
-        <Services/>
-        <Qualification/>
         <Work/>
+        <Skills/>
+        <About/>
+        <Qualification/>
         <Certificaciones/>
+        {/* <Services/> */}
         {/* <Testimonials/> */}
         <Contact/>
       </main>
