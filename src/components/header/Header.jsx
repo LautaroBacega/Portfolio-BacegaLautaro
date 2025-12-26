@@ -52,6 +52,20 @@ const Header = () => {
               </li>
 
               <li className="nav__item">
+                <a href="#calificaciones"
+                  onClick={() => setActiveNav ("#calificaciones")} 
+                  className={
+                    activeNav === '#home' 
+                    ? 'nav__link active-link'
+                    : 'nav__link'
+                  }
+                >
+                  <i className="uil uil-user nav__icon"></i> Calificaciones
+                </a>
+              </li>
+
+              {
+              /* <li className="nav__item">
                 <a href="#skills" 
                   onClick={() => setActiveNav ("#skills")} 
                   className={
@@ -60,11 +74,13 @@ const Header = () => {
                     : 'nav__link'
                   }
                 >
-                  <i className="uil uil-processor nav__icon"></i> Habilidades
+                  <i className="uil uil-user nav__icon"></i> Habilidades
                 </a>
-              </li>
+              </li> */
+              }
 
-              {/* <li className="nav__item">
+              {
+              /* <li className="nav__item">
                 <a href="#about" 
                   onClick={() => setActiveNav ("#about")} 
                   className={
@@ -75,9 +91,11 @@ const Header = () => {
                 >
                   <i className="uil uil-user nav__icon"></i> Acerca de mi
                 </a>
-              </li> */}
+              </li> */
+              }
               
-              {/* <li className="nav__item">
+              {
+              /* <li className="nav__item">
                 <a href="#services" 
                   onClick={() => setActiveNav ("#services")} 
                   className={
@@ -88,11 +106,13 @@ const Header = () => {
                 >
                   <i className="uil uil-briefcase-alt nav__icon"></i> Servicios
                 </a>
-              </li> */}
+              </li> */
+              }
 
               
 
-              {/* <li className="nav__item">
+              {
+              /* <li className="nav__item">
                 <a href="#testimonios"
                   onClick={() => setActiveNav ("#testimonios")} 
                   className={
@@ -103,7 +123,8 @@ const Header = () => {
                 >
                   <i className="uil uil-scenery nav__icon"></i> Mis Clientes
                 </a>
-              </li> */}
+              </li> */
+              }
               
               <li className="nav__item">
                 <a href="#certificados" 

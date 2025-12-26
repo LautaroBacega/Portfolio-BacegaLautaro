@@ -10,7 +10,7 @@ const Qualification = () => {
     }
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="calificaciones">
         <h2 className="section__title">Calificaciones</h2>
         <span className="section__subtitle">Mi Experiencia</span>
 
