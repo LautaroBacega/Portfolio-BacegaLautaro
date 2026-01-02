@@ -60,7 +60,7 @@ export const projectsData = [
     description:
       "Una tienda online completa para productos BMX con carrito de compras, sistema de pagos, autenticacion y gestión de inventario.",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Axios"],
-    link: "https://tienda-bmx-render.onrender.com",
+    link: "https://accesoriosbmx.onrender.com/",
     repository: "https://github.com/LautaroBacega/Tienda-BMX-render",
     features: ["Carrito de compras", "Autenticación", "Panel de administración", "Gestión de inventario"],
   },
