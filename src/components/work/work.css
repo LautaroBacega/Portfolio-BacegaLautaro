@@ -34,6 +34,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Agregado max-width para evitar overflow */
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .work__img {
@@ -42,12 +45,17 @@
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
+  /* Asegurar que la imagen no desborde */
+  max-width: 100%;
 }
 
 .work__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-5);
+  /* Centrar texto y manejar overflow */
+  text-align: center;
+  word-break: break-word;
 }
 
 .work__technologies {
@@ -114,20 +122,46 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* Cambio a una sola columna y width completo */
   .work__container {
-    grid-template-columns: max-content;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .work__card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
   }
 
   .work__img {
     width: 100%;
-    max-width: 300px;
     height: auto;
+    aspect-ratio: 3 / 2;
   }
 }
 
 @media screen and (max-width: 576px) {
+  /* Ajustes para pantallas muy pequeñas */
+  .work__container {
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+
+  .work__card {
+    padding: 0.75rem;
+    max-width: 100%;
+  }
+
   .work__img {
     width: 100%;
+    border-radius: 0.75rem;
+  }
+
+  .work__tech-badge {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
   }
 }
 
@@ -138,5 +172,14 @@
 
   .work__filters {
     column-gap: 0.25rem;
+  }
+
+  /* Ajustes extra para pantallas muy pequeñas */
+  .work__card {
+    padding: 0.5rem;
+  }
+
+  .work__title {
+    font-size: var(--small-font-size);
   }
 }
