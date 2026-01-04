@@ -20,8 +20,10 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   width: 100%;
   max-width: 50rem;
-  max-height: 85vh; /* Aumentado para dar más espacio */
+  max-height: 85vh;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-header {
@@ -30,9 +32,10 @@
   justify-content: space-between;
   padding: 1.25rem 1.5rem;
   border-bottom: 1px solid #e5e7eb;
-  background: white; /* Fondo fijo para el header */
+  background: white;
   position: relative;
   z-index: 1;
+  flex-shrink: 0;
 }
 
 .modal-title-section {
@@ -93,9 +96,9 @@
 
 .modal-body {
   padding: 1.5rem;
-  overflow-y: auto; /* REACTIVADO: scroll interno */
-  max-height: calc(85vh - 80px); /* Altura máxima menos el header */
-  /* Estilos personalizados para el scrollbar */
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
   scrollbar-width: thin;
   scrollbar-color: #cbd5e1 #f1f5f9;
 }
@@ -202,23 +205,117 @@
   gap: 1.5rem;
 }
 
+/* Improved mobile responsive styles for modal */
 @media (max-width: 768px) {
-  .modal-grid {
-    grid-template-columns: 1fr;
+  .modal-overlay {
+    padding: 0.5rem;
+    align-items: flex-start;
+    padding-top: 1rem;
   }
 
   .modal-content {
-    max-height: 90vh;
-    margin: 0.5rem;
+    max-height: calc(100vh - 2rem);
+    max-height: calc(100dvh - 2rem);
+    border-radius: 0.75rem;
+  }
+
+  .modal-header {
+    padding: 0.875rem 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.125rem;
   }
 
   .modal-body {
-    max-height: calc(90vh - 80px);
-    padding: 1.25rem;
+    padding: 1rem;
+  }
+
+  .modal-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .carousel-container {
-    height: 220px;
+    height: 160px;
+  }
+
+  .modal-section {
+    gap: 0.5rem;
+  }
+
+  .modal-section-title {
+    font-size: 1rem;
+  }
+
+  .modal-description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .modal-feature-item {
+    font-size: 0.8rem;
+  }
+
+  .tech-tag {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .modal-btn {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.85rem;
+  }
+
+  .modal-left,
+  .modal-right {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-overlay {
+    padding: 0.25rem;
+    padding-top: 0.5rem;
+  }
+
+  .modal-content {
+    max-height: calc(100vh - 1rem);
+    max-height: calc(100dvh - 1rem);
+    border-radius: 0.5rem;
+  }
+
+  .modal-header {
+    padding: 0.75rem;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+  }
+
+  .modal-badge {
+    font-size: 0.75rem;
+    padding: 0.125rem 0.5rem;
+  }
+
+  .modal-body {
+    padding: 0.75rem;
+  }
+
+  .carousel-container {
+    height: 140px;
+  }
+
+  .modal-section-title {
+    font-size: 0.9rem;
+  }
+
+  .modal-features {
+    gap: 0.25rem;
+  }
+
+  .modal-buttons {
+    gap: 0.5rem;
   }
 }
 
