@@ -8,6 +8,11 @@ import tiendabmxIMG7 from "../../assets/tiendabmxIMG7.png"
 import tiendabmxIMG8 from "../../assets/tiendabmxIMG8.png"
 import tiendabmxIMG9 from "../../assets/tiendabmxIMG9.png"
 import tiendabmxIMG10 from "../../assets/tiendabmxIMG10.png"
+import tiendabmxIMG11 from "../../assets/tiendabmxIMG11.png"
+import tiendabmxIMG12 from "../../assets/tiendabmxIMG12.png"
+import tiendabmxIMG13 from "../../assets/tiendabmxIMG13.png"
+import tiendabmxIMG14 from "../../assets/tiendabmxIMG14.png"
+import tiendabmxIMG15 from "../../assets/tiendabmxIMG15.png"
 import cinelistaIMG1 from "../../assets/cinelistaIMG1.png"
 import cinelistaIMG2 from "../../assets/cinelistaIMG2.png"
 import cinelistaIMG3 from "../../assets/cinelistaIMG3.png"
@@ -54,6 +59,11 @@ export const projectsData = [
       tiendabmxIMG8,
       tiendabmxIMG9,
       tiendabmxIMG10,
+      tiendabmxIMG11,
+      tiendabmxIMG12,
+      tiendabmxIMG13,
+      tiendabmxIMG14,
+      tiendabmxIMG15,
     ],
     title: "Ecommerce - Tienda Bmx",
     category: "Fullstack",
@@ -61,7 +71,7 @@ export const projectsData = [
       "Una tienda online completa para productos BMX con carrito de compras, sistema de pagos, autenticacion y gestión de inventario.",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Axios"],
     link: "https://accesoriosbmx.onrender.com/",
-    repository: "https://github.com/LautaroBacega/Tienda-BMX-render",
+    repository: "https://github.com/LautaroBacega/Tienda-BMX-render---Nuevo-Login",
     features: ["Carrito de compras", "Autenticación", "Panel de administración", "Gestión de inventario"],
   },
   {
