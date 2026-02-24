@@ -29,6 +29,8 @@ import abbmxIMG1 from "../../assets/abbmxIMG1.png"
 import abbmxIMG2 from "../../assets/abbmxIMG2.png"
 import abbmxIMG3 from "../../assets/abbmxIMG3.png"
 import abbmxIMG4 from "../../assets/abbmxIMG4.png"
+import abbmxIMG5 from "../../assets/abbmxIMG5.png"
+import abbmxIMG6 from "../../assets/abbmxIMG6.png"
 import somosBahia1 from "../../assets/somosBahia1.png"
 import somosBahia2 from "../../assets/somosBahia2.png"
 import somosBahia3 from "../../assets/somosBahia3.png"
@@ -108,12 +110,12 @@ export const projectsData = [
   {
     id: 4,
     image: abbmxIMG1,
-    images: [abbmxIMG1, abbmxIMG2, abbmxIMG3, abbmxIMG4],
+    images: [abbmxIMG1, abbmxIMG2, abbmxIMG3, abbmxIMG4, abbmxIMG5, abbmxIMG6],
     title: "Escuela de BMX Freestyle",
     category: "Frontend",
     description: "Sitio web para una escuela de BMX Freestyle con información de cursos y instructores.",
     technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-    link: "https://abbmxfreestyle.netlify.app/",
+    link: "https://abbmx.com.ar/",
     repository: "https://github.com/LautaroBacega/ABBMXFreestyle",
     features: ["Diseño responsive", "Galería de fotos", "Formulario de contacto", "Información de contacto"],
   },
