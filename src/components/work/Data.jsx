@@ -129,6 +129,7 @@ export const projectsData = [
       "Landing page moderna y responsive para el movimiento político Somos Bahía, con propuestas, valores, candidatos e integración de participación ciudadana.",
     technologies: ["React", "Vite", "Tailwind CSS", "Recharts", "Google Forms"],
     link: "https://somosbahia.netlify.app/",
+    repository:"https://github.com/LautaroBacega/SomosBahia",
     features: [
       "Diseño responsive",
       "Secciones de propuestas, valores y candidatos",
